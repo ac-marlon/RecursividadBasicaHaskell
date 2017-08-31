@@ -1,4 +1,9 @@
-decbin::Int->Int
-decbin 0 = 0
-decbin 1 = 1
-decbin a = decbin(a mod 2) * 10
+
+dec:: Int -> Int
+dec a = 
+	if div a 2 == 1 && mod a 2 == 0
+		then 10
+	else if div a 2 == 1 && mod a 2 == 1
+		then 11
+	else
+(mod a 2) + 10 * dec(div a 2) 
