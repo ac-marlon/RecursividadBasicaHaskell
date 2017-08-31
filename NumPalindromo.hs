@@ -1,4 +1,10 @@
 palindromo :: Int -> Bool
-palindromo x = 
- 		((div x 1000) == (mod x 10)) && 
- 		((mod (div x 100) 10) == (div (mod x 100) 10))
+palindromo x = calculo x == division x
+
+calculo :: Int -> Int
+calculo x = if x <= 9 then x else mod x 10
+calculo x = if x >= 9 then calculo (div x 10) else x
+
+division :: Int -> Int
+division x = if x >= 9 then division (div x 10) else x
+division x = if x <= 9 then x else 0 
