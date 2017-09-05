@@ -10,6 +10,6 @@
 
 **Integrantes:**
 
--Marlon Arias Cárdenas (20151020111)
--Daniel Mesa (20141020056)
--Daniel Saenz (20141020060)
+- Marlon Arias Cárdenas (20151020111)
+- Daniel Mesa (20141020056)
+- Daniel Saenz (20141020060)
