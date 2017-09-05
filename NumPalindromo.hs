@@ -1,10 +1,13 @@
+invertir :: Int -> Int
+invertir a = if a < 10 then a
+else ((mod a 10) * multiplicador a) + invertir(div a 10) 
+
+multiplicador :: Int -> Int
+multiplicador a = if a < 10 then 1
+else 10 * multiplicador(div a 10) 
+
 palindromo :: Int -> Bool
-palindromo x = calculo x == division x
+palindromo a = if a < 10 then True
+else if (invertir a) == a then True
+else False
 
-calculo :: Int -> Int
-calculo x = if x <= 9 then x else mod x 10
-calculo x = if x >= 9 then calculo (div x 10) else x
-
-division :: Int -> Int
-division x = if x >= 9 then division (div x 10) else x
-division x = if x <= 9 then x else 0 
