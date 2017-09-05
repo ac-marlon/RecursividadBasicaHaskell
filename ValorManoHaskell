@@ -1,0 +1,11 @@
+calcular::[String] -> [String] -> Int
+calcular [] [] = 0
+calcular (x:xs)(y:ys) =  valor_carta x + valor_carta y	
+
+valor_carta:: String -> Int
+valor_carta x = 
+	if x == "J" then 10
+	else if x == "Q" then 10
+	else if x == "K" then 10
+	else if x == "A" then 1
+	else (read x :: Int) 
