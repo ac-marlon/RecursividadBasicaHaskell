@@ -1,3 +1,3 @@
 buscar::[Int] -> [Int] 
 buscar [] = [] 
-buscar (x:(_:xs)) = (x:(buscar xs))                                                
+buscar (x:(_:xs)) = (x:(buscar xs))
