@@ -1,12 +1,7 @@
-calcular::[String] -> [String] -> Int
-calcular [] [] = 0
-calcular (x:xs)(y:ys) =  
-	if valor_carta x == 1 && valor_carta y == 1 then 12
-	else if valor_carta x == 1 && valor_carta y == 10 then 21
-	else if valor_carta y == 1 && valor_carta x == 10 then 21
-	else if valor_carta x == 1 && valor_carta y <= 10 then (11 + valor_carta y)
-	else if valor_carta y == 1 && valor_carta  x <= 10 then (11 + valor_carta x)
-	else valor_carta x + valor_carta y  
+calcular::[(String,String)] -> Int
+calcular [] = 0
+calcular ((xv,xp):xs) = if valor_carta xv == 1 && calcular xs <=10 then 11 + calcular xs
+			else valor_carta xv + calcular xs
 
 valor_carta:: String -> Int
 valor_carta x = 
@@ -15,4 +10,3 @@ valor_carta x =
 	else if x == "K" then 10
 	else if x == "A" then 1
 	else (read x :: Int) 
-
