@@ -26,6 +26,7 @@ valor_carta x =
 	
 hayAces:: Int -> Int
 hayAces x = if x <= 11 then x + 10
-			else if x>11 && x<21 then x + 1
+			else if x>11 && x<21 then x 
+			else if x>21 then x - 10
 			else x+ 0 			
-			
+
