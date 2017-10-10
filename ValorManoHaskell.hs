@@ -29,5 +29,3 @@ hayAces x = if x <= 11 then x + 10
 			else if x>11 && x<21 then x 
 			else if x>21 then x - 10
 			else x+ 0 			
-
-
