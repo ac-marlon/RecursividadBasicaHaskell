@@ -7,9 +7,3 @@
 2. Dividir dos enteros 
 3. Verificar si un numero es palindromo
 4. Extraer los elementos de indices impares de una lista
-
-**Integrantes:**
-
-- Marlon Arias Cárdenas (20151020111)
-- Daniel Mesa (20141020056)
-- Daniel Saenz (20141020060)
